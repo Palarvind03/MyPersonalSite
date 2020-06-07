@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pal's Shop | prodotti</title>
+    <link rel="stylesheet" href="./css/stile.css">
+    <script type="text/javascript" src="./js/script.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="contenitore">
+      <div id="topper">
+      <h1 id="Toptesto" data-aos="fade-right">Pal's Shop Products</h1>
+      <img src="./img/topperImg.png" id="topperImg">
+      </div>
+      <div id="main">
+        <div id="DivAb" data-aos="zoom-in-up" data-aos-duration="2000">
+          <p class="abClasse" onmouseover="lineS(0)" onmouseout="lineSR(0)" onclick="lineC(0)">Tutti</p>
+          <p class="abClasse" onmouseover="lineS(1)" onmouseout="lineSR(1)" onclick="lineC(1)">Accessori</p>
+          <p class="abClasse" onmouseover="lineS(2)" onmouseout="lineSR(2)" onclick="lineC(2)">T-shirt</p>
+          <p class="abClasse" onmouseover="lineS(3)" onmouseout="lineSR(3)" onclick="lineC(3)">Felpe & Giacche</p>
+          <p class="abClasse" onmouseover="lineS(4)" onmouseout="lineSR(4)" onclick="lineC(4)">Pantaloni</p>
+          <p class="abClasse" onmouseover="lineS(5)" onmouseout="lineSR(5)" onclick="lineC(5)">Shorts</p>
+          <p class="abClasse" onmouseover="lineS(6)" onmouseout="lineSR(6)" onclick="lineC(6)">Scarpe</p>
+        </div>
+        <div id="lineStile"></div>
+        <div id="lineStileP"></div>
+        <div id="lineNasco"></div>
+        <div class="proSin" data-aos="fade-up-right" data-aos-duration="3000">
+          <img src="./img/tutti/pro1.png" alt="prodotto1" class="imgPro" draggable="true"  ondragstart="drag(event)" id="0" onmouseover="visPrezS(0)" onmouseout="visPrezSr(0)">
+          <div class="divPrezzoS"><p class="paraS"></p></div>
+        </div>
+        <div class="proDes" data-aos="fade-up-left" data-aos-duration="3000">
+          <img src="./img/tutti/pro2.png" alt="prodotto2" class="imgPro" draggable="true"  ondragstart="drag(event)" id="1" onmouseover="visPrezD(0)" onmouseout="visPrezDr(0)">
+          <div class="divPrezzoD"><p class="paraD"></p></div>
+        </div>
+        <div class="proSin" data-aos="fade-up-right" data-aos-duration="1200">
+          <img src="./img/tutti/pro3.png" alt="prodotto3" class="imgPro" draggable="true"  ondragstart="drag(event)" id="2"  onmouseover="visPrezS(1)" onmouseout="visPrezSr(1)">
+          <div class="divPrezzoS"><p class="paraS"></p></div>
+        </div>
+        <div class="proDes" data-aos="fade-up-left" data-aos-duration="1200">
+          <img src="./img/tutti/pro4.png" alt="prodotto4" class="imgPro" draggable="true"  ondragstart="drag(event)" id="3" onmouseover="visPrezD(1)" onmouseout="visPrezDr(1)">
+          <div class="divPrezzoD"><p class="paraD"></p></div>
+        </div>
+        <div class="proSin" data-aos="fade-up-right" data-aos-duration="1200">
+          <img src="./img/tutti/pro5.png" alt="prodotto5" class="imgPro" draggable="true"  ondragstart="drag(event)" id="4" onmouseover="visPrezS(2)" onmouseout="visPrezSr(2)">
+          <div class="divPrezzoS"><p class="paraS"></p></div>
+        </div>
+        <div class="proDes" data-aos="fade-up-left" data-aos-duration="1200">
+          <img src="./img/tutti/pro6.png" alt="prodotto6" class="imgPro" draggable="true"  ondragstart="drag(event)" id="5" onmouseover="visPrezD(2)" onmouseout="visPrezDr(2)">
+          <div class="divPrezzoD"><p class="paraD"></p></div>
+        </div>
+        <div class="proSin" data-aos="fade-up-right" data-aos-duration="1200">
+          <img src="./img/tutti/pro7.png" alt="prodotto7" class="imgPro" draggable="true"  ondragstart="drag(event)" id="6" onmouseover="visPrezS(3)" onmouseout="visPrezSr(3)">
+          <div class="divPrezzoS"><p class="paraS"></p></div>
+        </div>
+        <div class="proDes" data-aos="fade-up-left" data-aos-duration="1200">
+          <img src="./img/tutti/pro8.png" alt="prodotto8" class="imgPro" draggable="true"  ondragstart="drag(event)" id="7" onmouseover="visPrezD(3)" onmouseout="visPrezDr(3)">
+          <div class="divPrezzoD"><p class="paraD"></p></div>
+        </div>
+        <div class="proSin" data-aos="fade-up-right" data-aos-duration="1200">
+          <img src="./img/tutti/pro9.png" alt="prodotto9" class="imgPro" draggable="true"  ondragstart="drag(event)" id="8" onmouseover="visPrezS(4)"  onmouseout="visPrezSr(4)">
+          <div class="divPrezzoS"><p class="paraS"></p></div>
+        </div>
+        <div class="proDes" data-aos="fade-up-left" data-aos-duration="1200">
+          <img src="./img/tutti/pro10.png" alt="prodotto10" class="imgPro" draggable="true"  ondragstart="drag(event)" id="9" onmouseover="visPrezD(4)" onmouseout="visPrezDr(4)">
+          <div class="divPrezzoD"><p class="paraD"></p></div>
+        </div>
+        <div class="proSin" data-aos="fade-up-right" data-aos-duration="1200">
+          <img src="./img/tutti/pro11.png" alt="prodotto11" class="imgPro" draggable="true"  ondragstart="drag(event)" id="10" onmouseover="visPrezS(5)" onmouseout="visPrezSr(5)">
+          <div class="divPrezzoS"><p class="paraS"></p></div>
+        </div>
+        <div class="proDes" data-aos="fade-up-left" data-aos-duration="1200">
+          <img src="./img/tutti/pro12.png" alt="prodotto12" class="imgPro" draggable="true"  ondragstart="drag(event)" id="11" onmouseover="visPrezD(5)" onmouseout="visPrezDr(5)">
+          <div class="divPrezzoD"><p class="paraD"></p></div>
+        </div>
+        <div class="proSin" data-aos="fade-up-right" data-aos-duration="1200">
+          <img src="./img/tutti/pro13.png" alt="prodotto13" class="imgPro" draggable="true"  ondragstart="drag(event)" id="12" onmouseover="visPrezS(6)" onmouseout="visPrezSr(6)">
+          <div class="divPrezzoS"><p class="paraS"></p></div>
+        </div>
+        <div class="proDes" data-aos="fade-up-left" data-aos-duration="1200">
+          <img src="./img/tutti/pro14.png" alt="prodotto14" class="imgPro" draggable="true"  ondragstart="drag(event)" id="13" onmouseover="visPrezD(6)" onmouseout="visPrezDr(6)">
+          <div class="divPrezzoD"><p class="paraD"></p></div>
+        </div>
+        <div class="proSin" data-aos="fade-up-right" data-aos-duration="1200">
+          <img src="./img/tutti/pro15.png" alt="prodotto15" class="imgPro" draggable="true"  ondragstart="drag(event)" id="14" onmouseover="visPrezS(7)" onmouseout="visPrezSr(7)">
+          <div class="divPrezzoS"><p class="paraS"></p></div>
+        </div>
+        <div class="proDes" data-aos="fade-up-left" data-aos-duration="1200">
+          <img src="./img/tutti/pro16.png" alt="prodotto16" class="imgPro" draggable="true"  ondragstart="drag(event)" id="15" onmouseover="visPrezD(7)" onmouseout="visPrezDr(7)">
+          <div class="divPrezzoD"><p class="paraD"></p></div>
+        </div>
+        <div class="proSin" data-aos="fade-up-right" data-aos-duration="1200">
+          <img src="./img/tutti/pro17.png" alt="prodotto17" class="imgPro" draggable="true"  ondragstart="drag(event)" id="16" onmouseover="visPrezS(8)" onmouseout="visPrezSr(8)">
+          <div class="divPrezzoS"><p class="paraS"></p></div>
+        </div>
+        <div class="proDes" data-aos="fade-up-left" data-aos-duration="1200">
+          <img src="./img/tutti/pro18.png" alt="prodotto18" class="imgPro" draggable="true"  ondragstart="drag(event)" id="17" onmouseover="visPrezD(8)" onmouseout="visPrezDr(8)">
+          <div class="divPrezzoD"><p class="paraD"></p></div>
+        </div>
+        <div class="proSin" data-aos="fade-up-right" data-aos-duration="1200">
+          <img src="./img/tutti/pro19.png" alt="prodotto19" class="imgPro" draggable="true"  ondragstart="drag(event)" id="18" onmouseover="visPrezS(9)" onmouseout="visPrezSr(9)">
+          <div class="divPrezzoS"><p class="paraS"></p></div>
+        </div>
+        <div class="proDes" data-aos="fade-up-left" data-aos-duration="1200">
+          <img src="./img/tutti/pro20.png" alt="prodotto20" class="imgPro" draggable="true"  ondragstart="drag(event)" id="19"  onmouseover="visPrezD(9)" onmouseout="visPrezDr(9)">
+          <div class="divPrezzoD"><p class="paraD"></p></div>
+        </div>
+        <div class="proSin" data-aos="fade-up-right" data-aos-duration="1200">
+          <img src="./img/tutti/pro21.png" alt="prodotto21" class="imgPro" draggable="true"  ondragstart="drag(event)" id="20" onmouseover="visPrezS(10)" onmouseout="visPrezSr(10)">
+          <div class="divPrezzoS"><p class="paraS"></p></div>
+        </div>
+        <div class="proDes" data-aos="fade-up-left" data-aos-duration="1200">
+          <img src="./img/tutti/pro22.png" alt="prodotto22" class="imgPro" draggable="true"  ondragstart="drag(event)" id="21"  onmouseover="visPrezD(10)" onmouseout="visPrezDr(10)">
+          <div class="divPrezzoD"><p class="paraD"></p></div>
+        </div>
+        <div class="proSin" data-aos="fade-up-right" data-aos-duration="1200">
+          <img src="./img/tutti/pro23.png" alt="prodotto23" class="imgPro" draggable="true"  ondragstart="drag(event)" id="22"  onmouseover="visPrezS(11)" onmouseout="visPrezSr(11)">
+          <div class="divPrezzoS"><p class="paraS"></p></div>
+        </div>
+        <div class="proDes" data-aos="fade-up-left" data-aos-duration="1200">
+          <img src="./img/tutti/pro24.png" alt="prodotto24" class="imgPro" draggable="true"  ondragstart="drag(event)" id="23" onmouseover="visPrezD(11)" onmouseout="visPrezDr(11)">
+          <div class="divPrezzoD"><p class="paraD"></p></div>
+        </div>
+        <div class="proSin" data-aos="fade-up-right" data-aos-duration="1200">
+          <img src="./img/tutti/pro25.png" alt="prodotto25" class="imgPro" draggable="true"  ondragstart="drag(event)" id="24" onmouseover="visPrezS(12)" onmouseout="visPrezSr(12)">
+          <div class="divPrezzoS"><p class="paraS"></p></div>
+        </div>
+        <div class="proDes" data-aos="fade-up-left" data-aos-duration="1200">
+          <img src="./img/tutti/pro26.png" alt="prodotto26" class="imgPro" draggable="true"  ondragstart="drag(event)" id="25" onmouseover="visPrezD(12)" onmouseout="visPrezDr(12)">
+          <div class="divPrezzoD"><p class="paraD"></p></div>
+        </div>
+        <div class="proSin" data-aos="fade-up-right" data-aos-duration="1200">
+          <img src="./img/tutti/pro27.png" alt="prodotto27" class="imgPro" draggable="true"  ondragstart="drag(event)" id="26" onmouseover="visPrezS(13)" onmouseout="visPrezSr(13)">
+          <div class="divPrezzoS"><p class="paraS"></p></div>
+        </div>
+        <div class="proDes" data-aos="fade-up-left" data-aos-duration="1200">
+          <img src="./img/tutti/pro28.png" alt="prodotto28" class="imgPro" draggable="true"  ondragstart="drag(event)" id="27" onmouseover="visPrezD(13)" onmouseout="visPrezDr(13)">
+          <div class="divPrezzoD"><p class="paraD"></p></div>
+        </div>
+        <div class="proSin" data-aos="fade-up-right" data-aos-duration="1200">
+          <img src="./img/tutti/pro29.png" alt="prodotto29" class="imgPro" draggable="true"  ondragstart="drag(event)" id="28" onmouseover="visPrezS(14)" onmouseout="visPrezSr(14)">
+          <div class="divPrezzoS"><p class="paraS"></p></div>
+        </div>
+        <div class="proDes" data-aos="fade-up-left" data-aos-duration="1200">
+          <img src="./img/tutti/pro30.png" alt="prodotto30" class="imgPro" draggable="true"  ondragstart="drag(event)" id="29" onmouseover="visPrezD(14)" onmouseout="visPrezDr(14)">
+          <div class="divPrezzoD"><p class="paraD"></p></div>
+        </div>
+        <div class="proSin" data-aos="fade-up-right" data-aos-duration="1200">
+          <img src="./img/tutti/pro31.png" alt="prodotto31" class="imgPro" draggable="true"  ondragstart="drag(event)" id="30" onmouseover="visPrezS(15)" onmouseout="visPrezSr(15)">
+          <div class="divPrezzoS"><p class="paraS"></p></div>
+        </div>
+      </div>
+      <div id="DivCarrello" ondragover="allowDrop(event)" ondrop="drop(event)">
+        <p id="txtDrop">Drop</p>
+        <div id="carrello"></div>
+      </div>
+      <div id="totDiv">TOTALE:<p id="totP">sddf</p><p id="euro">€</p></div>
+      <div id="pop"><img src="./img/errore.png" height="60px" width="60px"><p id="popTxt"></p><input type="button" value="OK" id="popBtn" onclick="chiudiPop()"></div>
+      <div id="info" onclick="info()">i<p id="iNote">Per mettere il prodotto nel carrello;prova a prenderlo con il mouse...</p></div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

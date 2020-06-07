@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pal's Shop</title>
+    <link rel="stylesheet" href="./css/stile.css">
+    <script type="text/javascript"  src="./js/script.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+  </head>
+  <body>
+    <div id="contenuto">
+      <div id="barra">
+        <img id="logo" src="./img/logoPal.png" alt="logo">
+        <div id="divBarBut">
+          <a href="" class="barBut">Home</a>
+          <a href="./collegamenti/suDiMe/info.html" class="barBut">Su di me</a>
+          <a href="./collegamenti/prodotti/prodotti.html" class="barBut">Prodotti</a>
+          <a href="./collegamenti/contatti/contatti.html" class="barBut">Contatti</a>
+        </div>
+          <p name="nomeX" id="ben">Benvenuto,<br></p>
+      </div>
+      <div id="scorriDiv">
+        <div class="scorri"></div>
+        <div id="scorriTesto">
+          <h1>Benvenuto A<br>Pal's Shop</h1>
+          <h2>pal's shop ti porterà al<br> livello successivo.</h2>
+          <a id="scopri" href="#main">Scopri ora</a>
+        </div>
+      </div>
+      <div id="main">
+        <div id="divUltimiU"><p id="ultimiU" data-aos="fade-down" >Ultimi Usciti</p></div>
+        <div class="mainPro" data-aos="fade-up"><img  class="mainProImg" data-aos="zoom-out-up" data-aos-delay="200" src="./img/pro1.jpg" onmouseover="divImg(1)" onmouseout="divImgR(1)"></div>
+        <div class="mainPro" data-aos="fade-up"><img  height="350px" width="350px" id="mainProImg2" src="./img/pro2.jpg" data-aos="zoom-out-up" data-aos-delay="200" onmouseover="divImg(2)" onmouseout="divImgR(2)"></div>
+        <div class="mainPro" data-aos="fade-up"><img  class="mainProImg" src="./img/pro3.jpg" data-aos="zoom-out-up" data-aos-delay="200" onmouseover="divImg(3)" onmouseout="divImgR(3)"></div>
+
+        <div class="divProPara">
+          <h1 class="titProPara" data-aos="fade-down-left">Nike Air F. LV8 Utility</h1>
+          <p class="proPara" data-aos="fade-up-left">
+            La leggenda continua a risplendere con Nike Air Force 1 LV8 Utility,<br>
+            prima edizione dell'originale da basket che rivisita un classico<br>
+            molto amato: pelle definita, colori classici e un tocco brillante<br>
+            per metterti in mostra.<br>
+            Questo modello sfoggia dettagli abbozzati che richiamano il design<br>
+            originale di Bruce Kilgore dell'82.<br>
+          </p>
+        </div>
+        <div class="divProPara">
+          <h1 class="titProPara" data-aos="fade-down-right" >T-shirt Festivo</h1>
+          <p class="proPara" data-aos="fade-up-right">
+            Un look casual per una dichiarazione di stile in piena regola.<br><br>
+            Di tutto senza dire una parola. Il tuo stile si esprime per te, ad esempio<br>
+            attraverso questa T-shirt dal design di carattere. Il Trifoglio sul petto rifinisce il<br>
+            look sportivo.<br>
+          </p>
+        </div>
+        <div class="divProPara">
+          <h1 class="titProPara" data-aos="fade-down-left">Borsa Ophidia</h1>
+          <p class="proPara" data-aos="fade-up-left">
+            Il mondo Ophidia continua a evolversi con l'introduzione di nuovi design,<br>
+            tra cui questa piccola borsa shopping in pelle bianca.<br>
+            Il modello classico combina elementi distintivi della Maison comeil nastro<br>
+            Web blu e rosso e il logo Doppia G emblematico della linea.<br>
+            Doppio manico e tracolla staccabile in pelle completano l'accessorio.<br>
+          </p>
+        </div>
+        <div id="divStile"></div>
+        <div id="divStile2"></div>
+        <div id="divStile3"></div>
+        <h2 id="hash" data-aos="fade-down">#</h2><h1 id="soloEstale" data-aos="fade-down">IoAmoL'Estate</h1>
+        <img src="./img/estate.jpg" alt="estate" id="proEstate" data-aos="zoom-in-down" data-aos-delay="100">
+        <p id="Percento" data-aos="flip-up" data-aos-delay="200">50% di sconto<br>sui prodotti estate!</p>
+        <div id="vai" onmouseover="testoG()" onmouseout="noTestoG()" data-aos="flip-up">Vai</div>
+        <h1 id="segui" data-aos="fade-down">Seguici su</h1>
+        <img id="insta" src="./img/instagram.png" data-aos="flip-left" data-aos-delay="200">
+        <img id="twit" src="./img/twitter.png" data-aos="flip-left" data-aos-delay="300">
+        <img id="red" src="./img/reddit.png" data-aos="flip-left" data-aos-delay="400">
+        </div>
+        <div id="map"></div>
+      </div>
+    </div>
+    <script>
+ 			var map = L.map('map').setView([44.644605, 7.492601],13);
+
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+			}).addTo(map);
+
+			L.marker([ 44.644605,  7.492601]).addTo(map)
+   	 .bindPopup('Pals Shop!')
+   	 .openPopup();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+  </html>

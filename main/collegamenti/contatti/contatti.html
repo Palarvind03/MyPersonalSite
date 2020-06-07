@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>pal's Shop | contatti</title>
+    <link rel="stylesheet" href="./css/stile.css">
+    <script type="text/javascript" src="./js/script.js"></script>
+  </head>
+  <body>
+    <div id="contenitore">
+      <div id="DivStile"></div>
+      <div id="mainDiv">
+        <input id="input1" type="text" placeholder="Nome">
+        <input id="input2" type="email" placeholder="Email">
+        <textarea  id="input3" placeholder="scivi qualcosa..." rows="5"></textarea>
+        <input id="input4" type="button" value="Invia!" onclick="ricevuto()">
+      </div>
+      <img id="imgC" src="./img/contatti.png">
+      <h1 id="txtC">Contatta Con Noi...</h1>
+      <div id="pop">
+        <img id="popImg" src="./img/errore.png" height="60px" width="60px">
+        <p id="popTesto"></p>
+        <input type="button" value="Ok" id="popBtn" onclick="chiudiPop()">
+      </div>
+      <div id="divPath">
+        <a id="home" onmouseover="vaiHome()" onmouseout="resta()" href="./../../main.html">Home</a>
+        <h3 id="hash">/</h3>
+        <h3 id="in">Contatti</h3>
+      </div>
+    </div>
+  </body>
+</html>

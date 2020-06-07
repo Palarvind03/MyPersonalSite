@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Registrati a pal's shop</title>
+    <link rel="stylesheet" href="./css/stile.css">
+    <script type="text/javascript" src="./js/script.js"></script>
+  </head>
+  <body>
+    <div id="contenitore">
+      <div id="importante"><img src="./img/alert.png" height="30px" width="30px" id="alertImg"><p id="alertPara">Cliccando su "REGISTRA" tutti i dati saranno salvati nel localStorage...</p></div>
+      <div id="logDiv">
+        <h1>Benvenuto</h1>
+        <div id="inputDati">
+          <input class="logTxt" name="nome" type="text" maxlength="10" mixlength="6" placeholder="Nome" onclick="inputD(0)">
+          <input class="logTxt" name="cognome" type="text" maxlength="10" mixlength="6" placeholder="Cognome" onclick="inputD(1)">
+          <input class="logTxt" name="indirizzo" type="text" maxlength="20" mixlength="6" placeholder="Indirizzo" onclick="inputD(2)">
+        </div>
+        <input id="log" type="button" value="REGISTRA!" onclick="logIn()">
+
+      </div>
+    </div>
+    <div id="pop"><img id="masImg" src="./img/errore.png" height="50px" width="50px"><p id="popText"></p><a id="link" ><input type="button" value="OK" id="ok" onclick="chiudiPop()"></a></div>
+  </body>
+</html>
